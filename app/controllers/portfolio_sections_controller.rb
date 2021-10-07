@@ -18,4 +18,20 @@ class PortfolioSectionsController < ApplicationController
             end
         end
     end
+
+    def edit
+        @portfolio_item = PortfolioSection.find(params[:id])
+    end
+
+    def update
+        @portfolio_item = PortfolioSection.find(params[:id])
+
+        respond_to do |format|
+            if @portfolio_item.update(params.require(:portfolio_section).permit(:title, :subtitle, :body))
+                format.html { redirect_to portfolio_sections_path, notice: "The record was successfully updated." }
+            else
+                format.html { render :edit, status: :unprocessable_entity }
+            end
+        end
+    end
 end 

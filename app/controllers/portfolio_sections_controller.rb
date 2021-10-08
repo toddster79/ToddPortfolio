@@ -34,4 +34,9 @@ class PortfolioSectionsController < ApplicationController
             end
         end
     end
+
+    def show
+        @portfolio_item = PortfolioSection.find(params[:id])
+    end
+
 end 

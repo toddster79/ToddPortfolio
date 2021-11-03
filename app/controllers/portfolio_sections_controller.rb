@@ -41,6 +41,7 @@ class PortfolioSectionsController < ApplicationController
     end
 
     def show
+        # Controller runs a db query on the model and stores result in the instance variable
         @portfolio_item = PortfolioSection.find(params[:id])
     end
 

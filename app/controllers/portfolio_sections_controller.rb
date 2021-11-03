@@ -13,7 +13,7 @@ class PortfolioSectionsController < ApplicationController
     end
 
     def create
-        @portfolio_item = PortfolioSection.new(params.require(:portfolio_section).permit(:title, :subtitle, :body, technologies_attributes: [:name]))   
+        @portfolio_item = PortfolioSection.new(portfolio_section_params)   
     
         respond_to do |format|
             if @portfolio_item.save
@@ -32,7 +32,7 @@ class PortfolioSectionsController < ApplicationController
         @portfolio_item = PortfolioSection.find(params[:id])
 
         respond_to do |format|
-            if @portfolio_item.update(params.require(:portfolio_section).permit(:title, :subtitle, :body))
+            if @portfolio_item.update(portfolio_section_params)
                 format.html { redirect_to portfolio_sections_path, notice: "The record was successfully updated." }
             else
                 format.html { render :edit, status: :unprocessable_entity }
@@ -56,6 +56,17 @@ class PortfolioSectionsController < ApplicationController
         respond_to do |format|
             format.html { redirect_to portfolio_sections_url, notice: "Record was removed" }
         end
+    end
+
+    private
+
+    def portfolio_section_params
+        params.require(:portfolio_section).permit(
+            :title, 
+            :subtitle, 
+            :body,
+            technologies_attributes: [:name]
+        )
     end
 
 end 

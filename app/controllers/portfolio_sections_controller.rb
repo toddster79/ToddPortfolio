@@ -1,4 +1,6 @@
 class PortfolioSectionsController < ApplicationController
+    layout 'portfolio_section'
+    
     def index
         @portfolio_items = PortfolioSection.all 
     end

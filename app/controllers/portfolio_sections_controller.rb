@@ -1,4 +1,5 @@
 class PortfolioSectionsController < ApplicationController
+    before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
     layout 'portfolio_section'
     
     def index
@@ -27,12 +28,9 @@ class PortfolioSectionsController < ApplicationController
     end
 
     def edit
-        @portfolio_item = PortfolioSection.find(params[:id])
     end
 
     def update
-        @portfolio_item = PortfolioSection.find(params[:id])
-
         respond_to do |format|
             if @portfolio_item.update(portfolio_section_params)
                 format.html { redirect_to portfolio_sections_path, notice: "The record was successfully updated." }
@@ -43,14 +41,9 @@ class PortfolioSectionsController < ApplicationController
     end
 
     def show
-        # Controller runs a db query on the model and stores result in the instance variable
-        @portfolio_item = PortfolioSection.find(params[:id])
     end
 
     def destroy
-        # Perform the lookup
-        @portfolio_item = PortfolioSection.find(params[:id])
-
         # Destroy/delete the record
         @portfolio_item.destroy
 
@@ -69,6 +62,10 @@ class PortfolioSectionsController < ApplicationController
             :body,
             technologies_attributes: [:name]
         )
+    end
+
+    def set_portfolio_item
+        @portfolio_item = PortfolioSection.find(params[:id])
     end
 
 end 

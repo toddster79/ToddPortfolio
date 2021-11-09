@@ -101,6 +101,8 @@ GEM
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    petergate (3.0.0)
+      activerecord (> 4.0.0)
     pg (0.21.0)
     popper_js (1.16.0)
     pry (0.13.1)
@@ -199,6 +201,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  petergate (~> 3.0)
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.0)

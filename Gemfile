@@ -54,5 +54,7 @@ gem 'devise', '~> 4.8'
 
 gem 'bootstrap', '~> 4.0.0'
 
+gem 'todd_view_tool', git: 'https://github.com/toddster79/todd_view_tool'
+
 
 

@@ -3,11 +3,11 @@
 /*
  * Globals
  */
- * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+//  * {
+//     margin:0;
+//     padding:0;
+//     box-sizing: border-box;
+// }
 
 /* Links */
 a,
@@ -31,9 +31,11 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+html {
     height: 100%;
+}
+body {
+    height: 125%;
     background-color: #333;
 }
 
@@ -117,12 +119,14 @@ body {
 /*
  * Custom Styles
  */
-.card {
-    // margin: 50px 0 50px 0;
+.edit-card {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .card-body {
     color: black;
 }
+
 .auth-links a {
     color: black;
 }

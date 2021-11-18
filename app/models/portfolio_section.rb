@@ -11,6 +11,10 @@ class PortfolioSection < ApplicationRecord
         where(subtitle: 'Angular')
     end
 
+    def self.by_position
+        order("position ASC")
+    end
+
     # Second way to create a custom scope
     scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 

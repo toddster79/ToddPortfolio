@@ -6,7 +6,7 @@ class PortfolioSectionsController < ApplicationController
     layout 'portfolio_section'
     
     def index
-        @portfolio_items = PortfolioSection.all 
+        @portfolio_items = PortfolioSection.by_position
     end
 
     def angular

@@ -10,6 +10,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems

@@ -1,13 +1,9 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
  */
-//  * {
-//     margin:0;
-//     padding:0;
-//     box-sizing: border-box;
-// }
 
 /* Links */
 a,
@@ -145,7 +141,7 @@ body {
 }
 
 #background {
-    position: fixed;
+    position: fixed;  
     top: 50%;
     left: 50%;
     min-width: 100%;

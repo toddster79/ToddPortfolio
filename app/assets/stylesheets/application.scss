@@ -173,5 +173,22 @@ body {
     padding: 15px;
 }
 
+.app-card-container {
+    color: black;
+    text-align: left;
+}
+
+.app-card-container > .card {
+    padding: 40px;
+}
+
+.app-card-container a {
+    color: blue;
+}
+
+.contact-container {
+    padding: 20px;
+}
+
 
 

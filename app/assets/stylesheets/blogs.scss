@@ -125,6 +125,7 @@ h6, .h6 {
 .blog-post-title {
     margin-bottom: .25rem;
     font-size: 1.9rem;
+    color: #39ADCE;
 }
 .blog-post-meta {
     margin-bottom: 1.25rem;
@@ -166,6 +167,12 @@ h6, .h6 {
 .icons {
     margin-left: 5px;
     font-size: 1.25em;
+    color: #39ADCE;
+}
+
+.show-icons {
+    font-size: 1.25em;
+    color: #39ADCE;
 }
 
 .blogcrumb a {
@@ -179,4 +186,27 @@ h6, .h6 {
 
 .blog-sidebar-source {
     margin-top: 20px;
+}
+
+.blog-title-font {
+    font-size: 50px;
+}
+
+.blog-button {
+    margin-bottom: 20px;
+    background-color: #39ADCE;
+    border-color: #39ADCE;
+}
+
+.topic-buttons {
+    background-color: #39ADCE;
+    border-color: #39ADCE;
+}
+
+.topic, a:hover{
+    color:#39ADCE;
+}
+
+.checked-btn {
+    color: #39ADCE;
 }

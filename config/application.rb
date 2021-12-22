@@ -23,4 +23,3 @@ module Portfolio
   end
 end
 
-config.serve_static_assets = true

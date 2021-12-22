@@ -22,3 +22,5 @@ module Portfolio
     config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
+
+config.serve_static_assets = true

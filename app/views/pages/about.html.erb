@@ -1,68 +1,64 @@
 <div class="app-card-container">
     <div class="card">
-        <main role="main" class="inner cover">
-            <div class="row">
-                <div class="col-md-7">
-                    <h1 class="cover-heading">About Me</h1>
-                    <hr class="hr-color">
-                    <p class="lead">I’m Todd, a software engineer based in Denver.</p>
-                    <p class="lead">I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design. When I am not online you can find me playing chess, reading, cooking, discovering new music, watching classic cinema, or playing board games. </p>
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="cover-heading">About Me</h1>
+                <hr class="hr-color">
+                <p class="lead">I’m Todd, a software engineer based in Denver.</p>
+                <p class="lead">I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
 
-                    <p>
-                    
-                        <button
-                        class="btn btn-info topic"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#jobHistory"
-                        aria-expanded="false"
-                        aria-controller="jobHistory"
-                        >
-                            Job History 
-                        </button>
+                <p>
+                    <button
+                    class="btn btn-info topic"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#jobHistory"
+                    aria-expanded="false"
+                    aria-controller="jobHistory"
+                    >
+                        Job History 
+                    </button>
 
-                        <button
-                        class="btn btn-info topic"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#education"
-                        aria-expanded="false"
-                        aria-controller="education"
-                        >
-                            Education 
-                        </button>
-                    </p>
+                    <button
+                    class="btn btn-info topic"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#education"
+                    aria-expanded="false"
+                    aria-controller="education"
+                    >
+                        Education 
+                    </button>
+                </p>
 
-                    <p>
-                    
-                        <div class="collapse" id="jobHistory">
-                            <div class="card card-block">
-                                Infosys /
-                                Associate Software Engineer /
-                                Feb 2021 - Present
-                            </div>
+                <p>
+                    <div class="collapse" id="jobHistory">
+                        <div class="card card-block">
+                            Infosys /
+                            Associate Software Engineer /
+                            Feb 2021 - Present
                         </div>
+                    </div>
 
-                        <div class="collapse" id="education">
-                            <div class="card card-block">
-                                Metropolitan State University of Denver /
-                                BA, Philosophy /
-                                2018
-                            </div>
-                            <div class="card card-block">
-                                Flatiron School /
-                                Full-Stack Web Development /
-                                2020
-                            </div>
+                    <div class="collapse" id="education">
+                        <div class="card card-block">
+                            Metropolitan State University of Denver /
+                            BA, Philosophy /
+                            2018
                         </div>
-                    </p>
-                </div>
-
-                <div class="col-md-5 image-cropper profile">
-                    <%= image_tag "profile-image.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
-                </div>
+                        <div class="card card-block">
+                            Flatiron School /
+                            Full-Stack Web Development /
+                            2020
+                        </div>
+                    </div>
+                </p>
             </div>
-        </main>
+
+            <div class="col-md-5 image-cropper profile">
+                <%= image_tag "profile-image.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+            </div>
+        </div>
     </div>
 </div>
 

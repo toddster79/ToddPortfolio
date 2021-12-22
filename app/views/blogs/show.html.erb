@@ -3,7 +3,7 @@
 
   <nav class="breadcrumb">  
     <%= link_to "Home", root_path, class: 'breadcrumb-item icons' %>
-    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item icons' %>
+    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item icons' %>  
     <span class="breadcrumb-item active icons"><%= @blog.title %></span>
   </nav>
 

@@ -42,6 +42,7 @@ gem 'twitter', '~> 7.0'
 gem 'redis', '~> 4.5', '>= 4.5.1'
 gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 gem 'coderay', '~> 1.1', '>= 1.1.3'
+gem 'rails_12factor', group: :production
 
 ruby "2.6.5"
 

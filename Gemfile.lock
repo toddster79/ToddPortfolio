@@ -311,7 +311,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   gritter (~> 1.2)
   jbuilder (~> 2.5)
-  jquery-rails
+  jquery-rails (~> 4.4)
   jquery-ui-rails (~> 6.0, >= 6.0.1)
   kaminari (~> 1.2, >= 1.2.1)
   listen (~> 3.0.5)

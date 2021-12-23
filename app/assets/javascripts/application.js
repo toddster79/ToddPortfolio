@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.flexslider-min
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery-ui
@@ -20,4 +19,5 @@
 //= require gritter
 //= require cable
 //= require turbolinks
+//= require_tree .
 

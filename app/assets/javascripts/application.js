@@ -11,16 +11,15 @@
 // about supported directives.
 //
 //= require jquery
-//= require static
-//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require lib/typed
+//= require typed-implementation
 //= require cable
 //= require turbolinks
-//= require jquery-3.3.1.slim.min.js
-//= require bootstrap.min.js
 //= require_tree .
+//= require bootstrap-sprockets
 
